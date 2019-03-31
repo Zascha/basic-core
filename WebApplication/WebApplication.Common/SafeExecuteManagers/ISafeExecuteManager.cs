@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Tasks;
 
 namespace WebApplication.Common.SafeExecuteManagers
 {
@@ -7,6 +6,6 @@ namespace WebApplication.Common.SafeExecuteManagers
     {
         void ExecuteWithExceptionLogging(Action action);
 
-        void ExecuteWithExceptionLogging(Func<Task> func);
+        ResultT ExecuteWithExceptionLogging<ArgT, ResultT>(ArgT arg, Func<ArgT, ResultT> func);
     }
 }

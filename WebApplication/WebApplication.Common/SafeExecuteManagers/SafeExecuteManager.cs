@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Tasks;
 using WebApplication.Common.Logger;
 
 namespace WebApplication.Common.SafeExecuteManagers
@@ -22,19 +21,20 @@ namespace WebApplication.Common.SafeExecuteManagers
             catch (Exception exception)
             {
                 _logger.LogError($"{action.Method.Name}() finished with exception.", exception);
+                throw;
             }
         }
 
-        // TODO: implement result returning
-        public void ExecuteWithExceptionLogging(Func<Task> func)
+        public ResultT ExecuteWithExceptionLogging<ArgT, ResultT>(ArgT arg, Func<ArgT, ResultT> func)
         {
             try
             {
-                func().Wait();
+                return func(arg);
             }
             catch (Exception exception)
             {
                 _logger.LogError($"{func.Method.Name}() finished with exception.", exception);
+                throw;
             }
         }
     }

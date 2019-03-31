@@ -1,0 +1,4 @@
+1) 3 layers architecture
+2) Domain events + raise domain events
+3) Publish / subscribe to message queue 
+4) Custom xml settings

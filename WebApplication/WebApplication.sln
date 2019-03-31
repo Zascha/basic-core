@@ -3,13 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.Common", "WebApplication.Common\WebApplication.Common.csproj", "{DD1092F9-C27F-4EE0-8007-04BF37B71DB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.Common", "WebApplication.Common\WebApplication.Common.csproj", "{DD1092F9-C27F-4EE0-8007-04BF37B71DB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.DependencyResolver", "WebApplication.DependencyResolver\WebApplication.DependencyResolver.csproj", "{477A3FE0-00EA-4C5E-ABB3-F0600EE86217}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.DependencyResolver", "WebApplication.DependencyResolver\WebApplication.DependencyResolver.csproj", "{477A3FE0-00EA-4C5E-ABB3-F0600EE86217}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.Data", "WebApplication.Data\WebApplication.Data.csproj", "{1315C731-0129-48E9-89FE-3CB2726B2358}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.Data", "WebApplication.Data\WebApplication.Data.csproj", "{1315C731-0129-48E9-89FE-3CB2726B2358}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.DataAccess", "WebApplication.DataAccess\WebApplication.DataAccess.csproj", "{FDA45975-D26B-4E4A-8207-48DF8B5D5F9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.DataAccess", "WebApplication.DataAccess\WebApplication.DataAccess.csproj", "{FDA45975-D26B-4E4A-8207-48DF8B5D5F9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CB132862-D449-479D-9734-308EB07C34C7}"
+	ProjectSection(SolutionItems) = preProject
+		ToDoList.txt = ToDoList.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.BusinessLogic", "WebApplication.BusinessLogic\WebApplication.BusinessLogic.csproj", "{F7178B6A-6597-4805-ADAD-0A9D3DEC2A1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +40,10 @@ Global
 		{FDA45975-D26B-4E4A-8207-48DF8B5D5F9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDA45975-D26B-4E4A-8207-48DF8B5D5F9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDA45975-D26B-4E4A-8207-48DF8B5D5F9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7178B6A-6597-4805-ADAD-0A9D3DEC2A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7178B6A-6597-4805-ADAD-0A9D3DEC2A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7178B6A-6597-4805-ADAD-0A9D3DEC2A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7178B6A-6597-4805-ADAD-0A9D3DEC2A1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

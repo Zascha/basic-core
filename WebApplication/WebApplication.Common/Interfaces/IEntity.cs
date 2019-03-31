@@ -4,6 +4,8 @@
     {
         int Id { get; set; }
 
-        bool IsDefault();
+        bool IsNew { get; }
+
+        bool IsDefault { get; }
     }
 }

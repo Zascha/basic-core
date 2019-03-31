@@ -1,7 +1,8 @@
 ﻿using Autofac;
 using Microsoft.EntityFrameworkCore;
-using WebApplication.Common.Logger;
+using WebApplication.Common;
 using WebApplication.Data;
+using WebApplication.DataAccess;
 
 namespace WebApplication.DependencyResolver
 {
@@ -16,9 +17,10 @@ namespace WebApplication.DependencyResolver
             var builder = new ContainerBuilder();
 
             builder.RegisterType<WebAppContext>().As<DbContext>()
-                   .WithParameter(new TypedParameter(typeof(string), "connectionSting value")); ;
+                   .WithParameter(new TypedParameter(typeof(string), "connectionSting value"));
 
-            builder.RegisterType<Logger>().As<ILogger>();
+            builder.RegisterModule(new CommonDependencyModule());
+            builder.RegisterModule(new DataAccessDependencyModule());
 
             return builder.Build();
         }

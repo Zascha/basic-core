@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
+using WebApplication.Data.Models;
 
 namespace WebApplication.Data
 {
@@ -19,6 +20,6 @@ namespace WebApplication.Data
             optionsBuilder.UseSqlServer("");
         }
 
-        // public DbSet<T> Ts { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

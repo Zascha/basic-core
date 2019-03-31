@@ -12,9 +12,13 @@ namespace WebApplication.DataAccess.GenericRepository
 
         int Create(T entity);
 
+        void CreateRange(IEnumerable<T> entities);
+
         void Update(T entity);
 
         void UpdateRange(IEnumerable<T> entities);
+
+        void Remove(int id);
 
         void Remove(T entity);
 
