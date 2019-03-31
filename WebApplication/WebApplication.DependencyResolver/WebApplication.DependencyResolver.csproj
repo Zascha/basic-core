@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WebApplication.Common\WebApplication.Common.csproj" />
+    <ProjectReference Include="..\WebApplication.DataAccess\WebApplication.DataAccess.csproj" />
     <ProjectReference Include="..\WebApplication.Data\WebApplication.Data.csproj" />
   </ItemGroup>
 
